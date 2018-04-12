@@ -1,4 +1,4 @@
-FROM kalilinux:kali-linux-docker
+FROM kalilinux/kali-linux-docker
 ####################################################
 # INSERT OUR LAUNCH ENTRY POINT SCRIPT
 ####################################################
