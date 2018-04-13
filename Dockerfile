@@ -11,9 +11,5 @@ RUN apt-get update -y && \
  msfupdate && \
  rm /usr/share/metasploit-framework/data/logos/*.txt && \
  chmod 755 /usr/bin/launch.sh
-####################################################
-# CUSTOMIZE METASPLOIT BANNER TO SOMETHING SECKC
-####################################################
 COPY seckc-docker.txt /usr/share/metasploit-framework/data/logos/cowsay.txt
-
 ENTRYPOINT ["/usr/bin/launch.sh"]

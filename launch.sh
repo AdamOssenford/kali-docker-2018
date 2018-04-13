@@ -10,10 +10,6 @@ echo "STARTING DATABASE SERVICE..."
 echo "INITIALIZING DATABASE"
 /usr/bin/msfdb init
 ############################
-# wait
-############################
-echo "LOADING DATABASE..." && sleep 15
-############################
-# wait a bit longer
+# LAUNCH MSF CONSOLE
 ############################
 /usr/bin/msfconsole
