@@ -8,7 +8,6 @@ COPY launch.sh /usr/bin/launch.sh
 ####################################################
 RUN apt-get update -y && \
  apt-get install metasploit-framework -y && \
- msfupdate && \
  rm /usr/share/metasploit-framework/data/logos/*.txt && \
  chmod 755 /usr/bin/launch.sh
 COPY seckc-docker.txt /usr/share/metasploit-framework/data/logos/cowsay.txt
